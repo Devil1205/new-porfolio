@@ -1,0 +1,8 @@
+{
+  "name": "DevFlow Portfolio",
+  "description": "A high-end, interactive professional portfolio for a Full Stack Developer featuring an AI-powered 'Digital Twin' assistant and smooth animations.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
