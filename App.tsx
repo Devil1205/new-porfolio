@@ -53,7 +53,7 @@ function App() {
               />
             </div>
             <motion.div 
-              className="absolute -bottom-10 -right-10 glass-panel p-8 rounded-3xl border-purple-500/20 z-20 shadow-2xl shadow-purple-900/20"
+              className="absolute -bottom-10 -right-5 sm:right-10 glass-panel p-4 sm:p-8 rounded-3xl border-purple-500/20 z-20 shadow-2xl shadow-purple-900/20"
               whileHover={{ y: -5, scale: 1.05 }}
             >
               <div className="text-5xl font-black text-purple-400">{PERSONAL_INFO.experienceYears}</div>
@@ -108,12 +108,12 @@ function App() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <div className="max-w-4xl mx-auto glass-panel p-16 md:p-24 rounded-[60px] text-center space-y-10 relative overflow-hidden group">
+          <div className="max-w-4xl mx-auto glass-panel p-8 xs:p-16 md:p-24 rounded-[60px] text-center space-y-10 relative overflow-hidden group">
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-purple-500 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-1000"></div>
             
-            <h2 className="text-6xl font-black tracking-tighter">Ready to <br /><span className="gradient-text">scale your project?</span></h2>
+            <h2 className="text-5xl xs:text-6xl font-black tracking-tighter">Ready to <br /><span className="gradient-text">scale your project?</span></h2>
             
-            <p className="text-2xl text-slate-400 max-w-2xl mx-auto font-light leading-relaxed">
+            <p className="text-xl xs:text-2xl text-slate-400 max-w-2xl mx-auto font-light leading-relaxed">
               Based in New Delhi, working globally. Let's build something exceptional together.
             </p>
             
@@ -122,7 +122,7 @@ function App() {
                 href={`mailto:${PERSONAL_INFO.email}`}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-12 py-5 bg-white text-black font-black text-lg rounded-full shadow-2xl hover:bg-slate-100 transition-colors flex items-center justify-center gap-3"
+                className="px-12 py-5 bg-white text-black font-black text-md xs:text-lg rounded-full shadow-2xl hover:bg-slate-100 transition-colors flex items-center justify-center gap-3"
               >
                 Let's Chat
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M22 2 11 13"/><path d="m22 2-7 20-4-9-9-4Z"/></svg>
@@ -131,7 +131,7 @@ function App() {
                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-12 py-5 glass-panel font-black text-lg rounded-full border-white/10 hover:bg-white/10 transition-all"
+                className="px-12 py-5 glass-panel font-black text-md xs:text-lg rounded-full border-white/10 hover:bg-white/10 transition-all"
               >
                 Top of Page
               </motion.button>
@@ -153,7 +153,7 @@ function App() {
         </div>
       </footer>
 
-      <Chatbot />
+      {/* <Chatbot /> */}
     </div>
   );
 }

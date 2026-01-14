@@ -16,7 +16,7 @@ const Experience: React.FC = () => {
         <div className="h-1 w-20 bg-purple-600 rounded-full mb-8"></div>
       </motion.div>
 
-      <div className="relative border-l border-white/10 ml-4 md:ml-0 space-y-12">
+      <div className="relative border-l border-white/10 space-y-12">
         {EXPERIENCE.map((exp, idx) => (
           <motion.div
             key={exp.id}
@@ -24,7 +24,7 @@ const Experience: React.FC = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ delay: idx * 0.2 }}
-            className="relative pl-12 group"
+            className="relative pl-4 sm:pl-12 group"
           >
             {/* Timeline Node */}
             <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-900 border-2 border-purple-500 group-hover:bg-purple-500 transition-colors duration-500"></div>

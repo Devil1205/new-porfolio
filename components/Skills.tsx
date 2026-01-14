@@ -42,7 +42,7 @@ const Skills: React.FC = () => {
       </div>
 
       <motion.div 
-        className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6"
+        className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -57,7 +57,7 @@ const Skills: React.FC = () => {
             {/* The Moving Border Logic */}
             <div className="moving-border-bg opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
             
-            <div className="moving-border-content p-8 h-full flex flex-col justify-between">
+            <div className="moving-border-content p-6 sm:p-8 h-full flex flex-col justify-between">
               <div>
                 <div className="text-[10px] font-mono font-bold tracking-widest text-slate-500 uppercase mb-3">{skill.category}</div>
                 <div className="text-xl font-black mb-6 text-white group-hover:text-purple-400 transition-colors">{skill.name}</div>

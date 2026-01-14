@@ -53,7 +53,7 @@ const Projects: React.FC = () => {
                 </a>
               </div>
 
-              <div className="p-10 space-y-6 flex-1 flex flex-col">
+              <div className="py-10 px-4 sm:px-10 space-y-6 flex-1 flex flex-col">
                 <div className="flex gap-3 flex-wrap">
                   {project.tags.map(tag => (
                     <span key={tag} className="text-[10px] font-black uppercase tracking-widest px-3 py-1 bg-slate-800/80 rounded-full border border-white/5 text-slate-400 group-hover:text-purple-400 transition-colors">{tag}</span>
@@ -66,7 +66,7 @@ const Projects: React.FC = () => {
                   {project.description}
                 </p>
                 
-                <div className="pt-6 flex items-center justify-between border-t border-white/5">
+                <div className="pt-6 gap-4 flex items-center justify-between border-t border-white/5 flex-col xs:flex-row">
                   <a href={project.repoUrl} aria-disabled={project.repoUrl?true:false} className={`text-sm font-black flex items-center gap-2 group/btn ${project.repoUrl?'hover:text-white':'cursor-not-allowed opacity-30'} transition-colors text-slate-400`}>
                     Source Code
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="transition-transform group-hover/btn:translate-x-1"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>

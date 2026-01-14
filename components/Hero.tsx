@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
         </motion.div>
         
         <motion.h1 
-          className="text-7xl md:text-[110px] font-black tracking-tight leading-[0.9] text-white"
+          className="text-6xl xs:text-7xl md:text-[110px] font-black tracking-tight leading-[0.9] text-white"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
