@@ -2,7 +2,7 @@
 export interface Skill {
   name: string;
   level: number;
-  category: 'Frontend' | 'Backend' | 'Database' | 'DevOps';
+  category: 'Frontend' | 'Backend' | 'Database' | 'DevOps' | 'Tools' | 'DSA & Programming';
   icon?: string;
 }
 

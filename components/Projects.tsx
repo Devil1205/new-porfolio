@@ -5,7 +5,7 @@ import { PROJECTS } from '../constants';
 
 const Projects: React.FC = () => {
   return (
-    <section id="projects" className="py-40 px-6 bg-[#020617]/50 relative">
+    <section id="projects" className="py-20 px-6 bg-[#020617]/50 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-[#030712] via-transparent to-[#030712] pointer-events-none"></div>
       
       <div className="max-w-7xl mx-auto relative z-10">
@@ -46,11 +46,11 @@ const Projects: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-[#030712] via-transparent to-transparent opacity-80"></div>
                 
                 {/* Overlay link icon */}
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-purple-600/20 backdrop-blur-sm">
+                <a href={project.demoUrl} target="_blank" className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-purple-600/20 backdrop-blur-sm">
                    <div className="w-16 h-16 rounded-full bg-white text-black flex items-center justify-center shadow-2xl scale-50 group-hover:scale-100 transition-transform duration-500">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                    </div>
-                </div>
+                </a>
               </div>
 
               <div className="p-10 space-y-6 flex-1 flex flex-col">
@@ -67,11 +67,11 @@ const Projects: React.FC = () => {
                 </p>
                 
                 <div className="pt-6 flex items-center justify-between border-t border-white/5">
-                  <a href={project.repoUrl || "#"} className="text-sm font-black flex items-center gap-2 group/btn hover:text-white transition-colors text-slate-400">
+                  <a href={project.repoUrl} aria-disabled={project.repoUrl?true:false} className={`text-sm font-black flex items-center gap-2 group/btn ${project.repoUrl?'hover:text-white':'cursor-not-allowed opacity-30'} transition-colors text-slate-400`}>
                     Source Code
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="transition-transform group-hover/btn:translate-x-1"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
                   </a>
-                  <a href={project.demoUrl || "#"} className="px-6 py-2.5 bg-white/5 hover:bg-white/10 rounded-full text-xs font-black uppercase tracking-widest transition-all">Live Preview</a>
+                  <a href={project.demoUrl} className="px-6 py-2.5 bg-white/5 hover:bg-white/10 rounded-full text-xs font-black uppercase tracking-widest transition-all">Live Preview</a>
                 </div>
               </div>
             </motion.div>

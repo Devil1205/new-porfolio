@@ -44,12 +44,12 @@ function App() {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <div className="relative group">
-            <div className="absolute -inset-4 bg-gradient-to-tr from-purple-600/20 to-blue-600/20 rounded-[40px] blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+            <div className="absolute -inset-4 bg-gradient-to-tr from-purple-600/20 to-blue-600/20 rounded-[40px] blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 "></div>
             <div className="aspect-square glass-panel rounded-3xl overflow-hidden relative z-10 p-2">
               <img 
-                src="https://picsum.photos/1200/1200?developer" 
+                src="/me.jpg" 
                 alt="Pulkit Sachdeva" 
-                className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 rounded-2xl" 
+                className="w-full h-full object-cover transition-all duration-1000 rounded-2xl " 
               />
             </div>
             <motion.div 
@@ -71,8 +71,8 @@ function App() {
             </div>
             
             <p className="text-xl text-slate-400 leading-relaxed font-light">
-              I'm Pulkit, a developer focused on building production-grade applications that can handle <span className="text-white font-medium">hundreds of thousands of users</span>. 
-              Currently at Neuronimbus, I've delivered <span className="text-white font-medium">7+ scalable projects</span> by following clean coding strategies and deep database optimization.
+              I'm Pulkit, a full stack developer focused on building production-grade applications that can handle <span className="text-white font-medium">hundreds of thousands of users</span>. 
+              Currently at Neuronimbus Software Services (P) Ltd., I've delivered <span className="text-white font-medium">7+ scalable projects</span> by following clean coding strategies and deep database optimization.
             </p>
             
             <p className="text-xl text-slate-400 leading-relaxed font-light">
@@ -102,7 +102,7 @@ function App() {
 
         <motion.section 
           id="contact" 
-          className="py-40 px-6"
+          className="py-20 px-6"
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}

@@ -5,7 +5,7 @@ import { PERSONAL_INFO } from '../constants';
 
 const Hero: React.FC = () => {
   return (
-    <section id="hero" className="min-h-screen flex flex-col items-center justify-center px-6 relative overflow-hidden pt-20">
+    <section id="home" className="min-h-screen flex flex-col items-center justify-center px-6 relative overflow-hidden pt-20">
       {/* Background decoration */}
       <motion.div 
         initial={{ opacity: 0, scale: 0.5 }}
