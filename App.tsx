@@ -8,6 +8,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Chatbot from './components/Chatbot';
 import { PERSONAL_INFO } from './constants';
+import MobileNavbar from './components/MobileNavbar';
 
 function App() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
@@ -31,6 +32,7 @@ function App() {
       />
 
       <Navbar />
+      <MobileNavbar />
       
       <main>
         <Hero />
